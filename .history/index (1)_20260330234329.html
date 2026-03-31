@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!--  مهمه اوي صفحه 5 -->
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#home">Portfolio</a>
+<!-- drawer  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="container position-relative hero-content">
+      <div class="row align-items-center min-vh-100 py-5 hero-row-padding pt-lg-0">
+        <div class="col-xl-9 col-lg-10 mx-auto text-center text-lg-start">
+          <p class="hero-kicker text-uppercase mb-3 letter-spacing">Hello, I'm</p>
+          <h1 class="display-3 fw-bold hero-title mb-4">Marwan</h1>
+          <p class="hero-lead text-secondary mb-5 col-lg-10 mx-auto mx-lg-0">
+            I'm learning web development and building simple, clean websites. Welcome to my portfolio.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a href="#projects" class="btn btn-primary btn-lg px-4 hero-btn">View My Work</a>
+            <a href="#" class="btn btn-outline-accent btn-lg px-4 hero-btn" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aboutt/////////// -->
+  <section id="about" class="py-5 section-alt section-spacing">
+    <div class="container py-lg-5 py-4">
+      <h2 class="text-center fw-bold mb-3 reveal">About Me</h2>
+      <p class="text-center text-secondary mb-5 col-lg-8 mx-auto reveal">
+        A short introduction so visitors know who you are.
+      </p>
+
+      <div class="row align-items-center g-4 g-lg-5 reveal">
+        <div class="col-md-5 text-center">
+          <img src="WhatsApp Image 2026-03-28 at 1.05.37 AM.jpeg"
+               alt="Portrait placeholder"
+               class="img-fluid rounded-3 shadow-sm about-img">
+        </div>
+        <div class="col-md-7">
+          <p class="text-secondary mb-3">
+            I'm a beginner-friendly developer who enjoys turning ideas into simple web pages. I like
+            clear layouts, readable text, and learning new tools step by step.
+          </p>
+          <p class="text-secondary mb-0">
+            When I'm not coding, I read, sketch, or explore design inspiration online. This site is
+            a small snapshot of what I'm working on—feel free to explore the projects below.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 section-spacing">
+    <div class="container py-lg-5 py-4">
+      <h2 class="text-center fw-bold mb-3 reveal">Projects</h2>
+      <p class="text-center text-secondary mb-5 col-lg-8 mx-auto reveal">
+        Here are a few sample projects. Swap the titles, images, and links for your own work.
+      </p>
+
+      <div class="row g-4 g-lg-5">
+        <!-- card 1 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100 border-0 project-card shadow-card rounded-4 overflow-hidden">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf57?w=800&h=500&fit=crop"
+                   class="project-img" alt="Laptop showing a landing page">
+              <div class="project-thumb-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="h5 card-title fw-semibold">Landing Page</h3>
+              <p class="card-text text-secondary flex-grow-1 small">
+                A one-page layout with a hero section and contact area, built with HTML and CSS.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2 align-self-start">View / Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100 border-0 project-card shadow-card rounded-4 overflow-hidden">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=500&fit=crop"
+                   class="project-img" alt="Code on a screen">
+              <div class="project-thumb-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="h5 card-title fw-semibold">To-Do List App</h3>
+              <p class="card-text text-secondary flex-grow-1 small">
+                A small JavaScript practice project to add and remove tasks in the browser.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2 align-self-start">View / Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0 reveal">
+          <div class="card h-100 border-0 project-card shadow-card rounded-4 overflow-hidden">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1504608524841-7fe621f79298?w=800&h=500&fit=crop"
+                   class="project-img" alt="Weather and sky">
+              <div class="project-thumb-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h3 class="h5 card-title fw-semibold">Weather Widget UI</h3>
+              <p class="card-text text-secondary flex-grow-1 small">
+                A static mock-up for a weather display—great for practicing Bootstrap cards and grids.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2 align-self-start">View / Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 section-alt section-spacing">
+    <div class="container py-lg-5 py-4">
+      <h2 class="text-center fw-bold mb-5 reveal ">Contact</h2>
+      
+
+      <div class="row justify-content-center reveal">
+        <div class="col-lg-7">
+         
+          <div id="formSuccess" class="alert alert-success d-none shadow-sm rounded-3" role="alert" tabindex="-1"></div>
+
+          <form class="contact-form bg-white p-4 p-md-5 rounded-4 shadow-card needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Name</label>
+              <input type="text" class="form-control form-control-lg" id="contactName" name="name" placeholder="Your name" autocomplete="name">
+              <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-control form-control-lg" id="contactEmail" name="email" placeholder="you@email.com" autocomplete="email">
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-4">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="contactMessage" name="message" rows="4" placeholder="Your message"></textarea>
+              <div class="invalid-feedback">Please write a message (at least 10 characters).</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- foterrrrr -->
+  <footer class="py-5 text-center text-secondary small border-top footer-block">
+    <div class="container">
+      <p class="mb-3 mb-md-4">&copy; <span id="year"></span> Thanks. All rights reserved.</p>
+     
+      <div class="d-flex justify-content-center gap-3 footer-social" aria-label="Social links">
+        <a class="footer-social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+          <i class="bi bi-facebook fs-5" aria-hidden="true"></i><span class="visually-hidden">Facebook</span>
+        </a>
+        <a class="footer-social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <i class="bi bi-linkedin fs-5" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span>
+        </a>
+        <a class="footer-social-link" href="https://github.com" target="_blank"title="GitHub">
+          <i class="bi bi-github fs-5" aria-hidden="true"></i><span class="visually-hidden">GitHub</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
